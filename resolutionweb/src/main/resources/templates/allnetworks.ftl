@@ -17,14 +17,14 @@
             <th scope="col">Elimina</th>
         </tr>
         </thead>
-    <#list model["product"] as product>
+    <#list model["network"] as network>
   	<tr>
-        <td>${product.id}</td>
-        <td>${product.name}</td>
-        <td>${product.description}</td>
-        <td>${product.price}</td>
-        <td><a href="/product/${product.id}/update">Edita</a></td>
-        <td><a href="/product/delete/${product.id}">Elimina</a></td>
+        <td>${network.id}</td>
+        <td>${network.dns}</td>
+        <td>${network.descripcio}</td>
+        <td>${network.adreca_ip}</td>
+        <td><a href="/network/${network.id}/update">Edita</a></td>
+        <td><a href="/network/delete/${network.id}">Elimina</a></td>
     </tr>
     </#list>
     </table>
