@@ -10,9 +10,9 @@
         <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">dns</th>
-            <th scope="col">Descripció</th>
-            <th scope="col">adreça ip</th>
+            <th scope="col">domain</th>
+            <th scope="col">Description</th>
+            <th scope="col">ip</th>
             <th scope="col">Actualiza</th>
             <th scope="col">Elimina</th>
         </tr>
@@ -20,9 +20,9 @@
     <#list model["network"] as network>
   	<tr>
         <td>${network.id}</td>
-        <td>${network.dns}</td>
-        <td>${network.descripcio}</td>
-        <td>${network.adreca_ip}</td>
+        <td>${network.domain}</td>
+        <td>${network.description}</td>
+        <td>${network.ip}</td>
         <td><a href="/network/${network.id}/update">Edita</a></td>
         <td><a href="/network/delete/${network.id}">Elimina</a></td>
     </tr>

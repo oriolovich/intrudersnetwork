@@ -16,7 +16,7 @@ import javax.validation.Valid;
 @Controller
 
 public class WebController {
-    protected final Logger log = LoggerFactory.getLogger(this.getClass());
+    private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     @Autowired
     private NetworkService networkService;
@@ -45,7 +45,7 @@ public class WebController {
         } catch (Exception e) {
             log.error("Valor introduït ivvàlid", e);
         }
-        return "product";
+        return "network";
     }
 
     /*Formulari per afegir xarxes dins del array list */
